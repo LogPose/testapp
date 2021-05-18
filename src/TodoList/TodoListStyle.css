@@ -1,0 +1,11 @@
+.todoList{
+    width: 600px;
+    height: 303px;
+    background-color: aquamarine;
+    margin-top: -303px;
+    margin-left: 360px;
+}
+
+.todoList h1{
+    margin: 0;
+}
