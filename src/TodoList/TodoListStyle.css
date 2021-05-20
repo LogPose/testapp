@@ -1,11 +1,114 @@
 .todoList{
+    position: relative;
+    display: inline-block;
     width: 600px;
     height: 303px;
-    background-color: aquamarine;
-    margin-top: -303px;
-    margin-left: 360px;
+    background-color: rgb(177, 243, 255);
+    margin-left: 5px;
+    overflow: auto;
+    border-radius: 10px 10px/25px 250px;
 }
 
 .todoList h1{
     margin: 0;
+}
+
+.add-button{
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 303px;
+    margin-left: -325px;
+    margin-top: 310px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    background-color: rgb(253, 255, 255);
+}
+
+.add-button:hover{
+    background-color: rgb(219, 255, 255);
+    box-shadow: 1px 1px 1px black;
+}
+
+.add-button:active{
+    background-color: rgb(159, 199, 199);
+}
+
+.addForm{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    left: 50%;
+    margin-left: -150px;
+    background-color: rgb(200, 252, 252);
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.addForm h3{
+    margin: 10px;
+}
+
+.addFormInput{
+    width: 270px;
+    height: 20px;
+    margin: 0 auto;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid rgb(102, 159, 197);
+}
+
+.addFormNote{
+    width: 270px;
+    height: 150px;
+    margin: 0 auto;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid rgb(102, 159, 197);   
+}
+
+.eventBlock{
+    height: 100px;
+    background-color: rgb(90, 199, 250);
+    margin: 10px;
+    border-radius: 30px 150px/120px 130px;
+    box-shadow: 2px 2px 2px rgb(63, 179, 224);
+    font-family: 'testfont';
+    padding: 5px;
+}
+
+.title{
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+    border-bottom: 1px solid black;
+}
+
+.description{
+    empty-cells: 50px;
+    margin: 5px 30px;
+}
+
+.deleteButton{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 500px;
+    outline: none;
+    border: none;
+    background-color: rgb(248, 74, 109, 0.7);
+    border-radius: 20px;
+}
+
+.deleteButton:hover{
+    background-color: rgb(248, 74, 109);
+    box-shadow: 1px 1px 1px rgb(248, 74, 109, 0.7);
+}
+
+@font-face {
+    font-family: 'testfont';
+    src: url(./testfont.ttf);
 }

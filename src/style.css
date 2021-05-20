@@ -1,0 +1,13 @@
+.app-body{
+    width: 1000px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(182, 220, 226);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+    box-shadow: 2px 2px 2px rgb(107, 107, 107);
+}

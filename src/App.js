@@ -1,26 +1,17 @@
 import React, { useState } from 'react'
-import AddTodo from './AddTodo'
 import MyCalendar from './Calendar'
 import TodoList from './TodoList'
+import './style.css'
 
 function App() {
-    
-    const [choosenDate, setChoosenDate] = useState('')
 
-    function chooseDate(value) {
-        setChoosenDate(value)
-    }
-
-    function addTodo() {
-        console.log('Add')
-    }
+    const [currentDay, setCurrentDay] = useState(new Date())
 
     return (
-        <div>
-            <AddTodo addTodo={addTodo}/>
-            <MyCalendar chooseDate={chooseDate} />
-            <TodoList choosenDate={choosenDate} addTodo={addTodo}/>
-        </div>
+            <div className="app-body">
+                <MyCalendar currentDay={setCurrentDay}/>
+                <TodoList currentDay={currentDay}/>
+            </div>
     )
 }
 
